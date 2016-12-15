@@ -1,4 +1,4 @@
 vim/bundle
 *.swp
 *.swo
-!vim/bundle/Vundle.vim
+! vim/bundle/Vundle.vim
