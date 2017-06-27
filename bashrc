@@ -118,3 +118,7 @@ fi
 
 # added by Anaconda3 4.2.0 installer
 export PATH="/home/aravindvasudev/anaconda3/bin:$PATH"
+
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+[ -f /usr/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.bash ] && . /usr/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.bash
