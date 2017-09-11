@@ -89,3 +89,5 @@ prompt_context() {}
 prompt_dir() {
     prompt_segment blue $PRIMARY_FG ' %25<...<%~%<< '
 }
+alias jekyll="~/.gem/ruby/2.4.0/bin/jekyll"
+alias bundle="~/.gem/ruby/2.4.0/bin/bundler"

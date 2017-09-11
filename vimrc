@@ -47,6 +47,8 @@ Plug 'scrooloose/syntastic'
 Plug 'Yggdroot/indentLine'
 Plug 'avelino/vim-bootstrap-updater'
 Plug 'sheerun/vim-polyglot'
+Plug 'Valloric/YouCompleteMe'
+
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 else
@@ -75,7 +77,8 @@ endif
 Plug 'honza/vim-snippets'
 
 "" Color
-Plug 'tomasr/molokai'
+" Plug 'tomasr/molokai'
+
 
 "*****************************************************************************
 "" Custom bundles
@@ -186,6 +189,8 @@ let g:session_command_aliases = 1
 "" Visual Settings
 "*****************************************************************************
 Plug 'dracula/vim'
+Plug 'beigebrucewayne/hacked_ayu.vim'
+
 syntax on
 set ruler
 set number
@@ -193,7 +198,13 @@ set number
 let no_buffers_menu=1
 if !exists('g:not_finish_vimplug')
   " colorscheme molokai
-  colorscheme dracula
+  " colorscheme dracula
+  set t_Co=256
+  set background=dark
+  colorscheme hacked_ayu
+  highlight nonText ctermbg=NONE
+
+
 endif
 
 set mousemodel=popup
@@ -215,7 +226,7 @@ else
   let g:indentLine_char = '┆'
   let g:indentLine_faster = 1
 
-  
+
   if $COLORTERM == 'gnome-terminal'
     set term=gnome-256color
   else
@@ -223,7 +234,7 @@ else
       set term=xterm-256color
     endif
   endif
-  
+
 endif
 
 
