@@ -193,7 +193,7 @@ set shiftwidth=4
 set expandtab
 
 "" Map leader to ,
-let mapleader=','
+" let mapleader=','
 
 "" Enable hidden buffers
 set hidden
@@ -801,3 +801,6 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" Shortcut to close current buffer
+map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>.
