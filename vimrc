@@ -53,6 +53,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'severin-lemaignan/vim-minimap'
 Plug 'lrvick/Conque-Shell'
+Plug 'jiangmiao/auto-pairs'
 
 
 if isdirectory('/usr/local/opt/fzf')

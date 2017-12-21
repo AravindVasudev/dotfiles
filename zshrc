@@ -7,7 +7,7 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="bira"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -91,3 +91,8 @@ prompt_dir() {
 }
 alias jekyll="~/.gem/ruby/2.4.0/bin/jekyll"
 alias bundle="~/.gem/ruby/2.4.0/bin/bundler"
+
+# added by Anaconda3 4.2.0 installer
+export PATH="/home/aravindvasudev/anaconda3/bin:$PATH"
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
