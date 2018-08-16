@@ -89,10 +89,3 @@ prompt_context() {}
 prompt_dir() {
     prompt_segment blue $PRIMARY_FG ' %25<...<%~%<< '
 }
-alias jekyll="~/.gem/ruby/2.4.0/bin/jekyll"
-alias bundle="~/.gem/ruby/2.4.0/bin/bundler"
-
-# added by Anaconda3 4.2.0 installer
-export PATH="/home/aravindvasudev/anaconda3/bin:$PATH"
-
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib

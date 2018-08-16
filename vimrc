@@ -51,8 +51,6 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'kien/rainbow_parentheses.vim'
-Plug 'severin-lemaignan/vim-minimap'
-Plug 'lrvick/Conque-Shell'
 Plug 'jiangmiao/auto-pairs'
 
 
@@ -758,9 +756,6 @@ else
   let g:airline_symbols.readonly = ''
   let g:airline_symbols.linenr = ''
 endif
-
-" Enable Minimap
-autocmd VimEnter * Minimap
 
 " Nerdtree
 let NERDTreeQuitOnOpen = 1
