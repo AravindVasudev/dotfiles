@@ -5,7 +5,7 @@
 # this repo. Configure the script using the following variables:
 dir=~/dotfiles # dotfiles directory
 olddir=~/dotfiles_old # old dotfiles
-files="bashrc vimrc vim zshrc oh-my-zsh" # dotfiles
+files="bashrc bash_profile zshrc oh-my-zsh vimrc vim" # dotfiles
 ###############################################################################\
 
 # create olddir
