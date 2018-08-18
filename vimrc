@@ -184,6 +184,12 @@ nnoremap <silent> <leader>b :buffers<CR>
 "" Open current line on GitHub
 nnoremap <Leader>o :.Gbrowse<CR>
 
+"" Maps pane navigation in Vim to ctrl+[h,j,k,l] keys
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 "******************************************************************************
 "" Visual Setup
 "******************************************************************************
