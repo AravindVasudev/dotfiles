@@ -1,0 +1,29 @@
+"==============================================================================
+" virc -> A lean .vimrc
+"==============================================================================
+set nocompatible
+filetype off
+
+"****************************************************************************** 
+" Basics
+"****************************************************************************** 
+set encoding=utf-8             " Encoding
+set number                     " Line number
+set hidden                     " Allows buffers to be hidden without saving
+set pastetoggle=<F3>           " Toggle pastemode
+set clipboard=unnamedplus      " Use system clipboard
+set showmatch                  " Highlight matching brackets 
+set hlsearch                   " Highlight all search results
+set smartcase                  " Enable smart-case search
+set ignorecase	               " Always case-insensitive
+set autoindent	               " Auto-indent new lines
+set ruler	               " Show row and column ruler information
+set backspace=indent,eol,start " Backspace behaviour
+set colorcolumn=80             " 80 character margin
+
+"****************************************************************************** 
+" Theme
+"****************************************************************************** 
+set t_Co=256 " 256 colors
+syntax on
+color xoria256

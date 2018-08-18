@@ -1,0 +1,15 @@
+###############################################################################
+# Common Aliases
+###############################################################################
+
+# Vim
+alias vinone="vim -u NONE"    # Plain vim
+alias vi="vim -u ~/.virc"     # Vim with lite configuration
+
+# ls
+alias ll="ls -alF"
+alias la="ls -A"
+alias l="ls -CF"
+
+# cd
+alias cd..="cd .."
