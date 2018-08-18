@@ -36,7 +36,6 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'kien/rainbow_parentheses.vim'
 
 Plug 'vim-scripts/c.vim', {'for': ['c', 'cpp']}
-Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
 Plug 'hail2u/vim-css3-syntax'
 Plug 'gorodinskiy/vim-coloresque'
 Plug 'tpope/vim-haml'
