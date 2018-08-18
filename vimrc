@@ -44,8 +44,6 @@ Plug 'mattn/emmet-vim'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
 
-Plug 'plasticboy/vim-markdown'
-
 call plug#end()
 
 "******************************************************************************
@@ -189,6 +187,17 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+"" Toggle colorcolumn
+fun! ToggleCC()
+  if &cc == ''
+    set cc=80
+  else
+    set cc=
+  endif
+endfun
+
+nnoremap <F5> :call ToggleCC()<CR>
 
 "******************************************************************************
 "" Visual Setup
