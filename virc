@@ -24,25 +24,25 @@ set colorcolumn=80             " 80 character margin
 "******************************************************************************
 " Fuzzy Search
 "******************************************************************************
-set path+=**
-set wildmenu
+set path+=**                   " Do a fuzzy file search using ':file <pattern>'
+set wildmenu                   " Enables tab selection menu for file search
 
 "******************************************************************************
 " Netrw
 "******************************************************************************
-let g:netrw_banner=0
-let g:netrw_liststyle=3
-let g:netrw_browse_split=4
-let g:netrw_winsize=25
+let g:netrw_banner=0           " Hide the annoying banner
+let g:netrw_liststyle=3        " NerdTree like nested view
+let g:netrw_browse_split=4     " Open file in previous buffer
+let g:netrw_winsize=25         " nertrw's size
 
-nnoremap <silent> <F2> :Ve<CR>
+nnoremap <silent> <F2> :Ve<CR> " Map to F2
 
 "******************************************************************************
 " Theme
 "******************************************************************************
-set t_Co=256 " 256 colors
-syntax on
-color xoria256
+set t_Co=256 " 256 colors      " Enable 256 color on terminal
+syntax on                      " Enable default syntax highlighting
+color xoria256                 " Theme
 
 "******************************************************************************
 " Keymaps
@@ -53,7 +53,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" Toggle colorcolumn
+" Toggle 80 character line using F5
 fun! ToggleCC()
   if &cc == ''
     set cc=80
