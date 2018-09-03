@@ -93,3 +93,9 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 [ -f ~/.aliases ] && . ~/.aliases
 [ -f ~/.aliases_local ] && . ~/.aliases_local
+
+# Functions
+function f() { find . -iname "*$1*" ${@:2} } # find
+function r() { grep "$1" ${@:2} -R . } # grep
+function fo() { vim $(find . -iname "*$1*" | head -1) } # find and open
+function jfo() { fo "$1.java" } # find and open java file
