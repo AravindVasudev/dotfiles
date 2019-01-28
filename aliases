@@ -13,3 +13,7 @@ alias l="ls -CF"
 
 # cd
 alias cd..="cd .."
+
+# pbcopy for linux (remove this for Mac OS)
+alias pbcopy='xsel --clipboard --input'
+alias pbpaste='xsel --clipboard --output'
