@@ -3,12 +3,14 @@
 ############################################################################### 
 
 # Prompt
-blue="\[\033[01;34m\]"
-orange=$(tput setaf 172)
-bold=$(tput bold)
-reset=$(tput sgr0)
+if [[ $- == *i* ]]; then
+    blue="\[\033[01;34m\]"
+    orange=$(tput setaf 172)
+    bold=$(tput bold)
+    reset=$(tput sgr0)
 
-export PS1="${bold}${blue}\w ${orange}λ ${reset}"
+    export PS1="${bold}${blue}\w ${orange}λ ${reset}"
+fi
 
 # Colored output for commands
 alias ls="ls --color=auto"
