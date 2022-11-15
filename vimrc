@@ -209,7 +209,7 @@ set ruler
 set number
 
 " theme
-let g:gruvbox_italic=1
+set background=dark
 colorscheme gruvbox
 
 set gfn=Monospace\ 10
