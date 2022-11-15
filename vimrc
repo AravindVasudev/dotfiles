@@ -28,7 +28,7 @@ Plug 'vim-scripts/CSApprox'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'jiangmiao/auto-pairs'
 Plug 'majutsushi/tagbar'
-Plug 'Yggdroot/indentLine'
+" Plug 'Yggdroot/indentLine'
 Plug 'sheerun/vim-polyglot'
 Plug 'tmhedberg/SimpylFold'
 Plug 'godlygeek/tabular'
@@ -216,9 +216,6 @@ set gfn=Monospace\ 10
 
 "" IndentLine
 let g:indentLine_enabled = 1
-let g:indentLine_concealcursor = 0
-let g:indentLine_char = '┆'
-let g:indentLine_faster = 1
 
 "" 80 character line
 set colorcolumn=80
