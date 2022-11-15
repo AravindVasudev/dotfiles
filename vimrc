@@ -43,8 +43,8 @@ Plug 'mattn/emmet-vim'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
 
+" Themes
 Plug 'morhetz/gruvbox'
-Plug 'vim-scripts/xoria256.vim'
 
 call plug#end()
 
@@ -209,11 +209,8 @@ set ruler
 set number
 
 " theme
-" let g:gruvbox_italic=1
-" let g:gruvbox_termcolors=16
-" colorscheme gruvbox
-set t_Co=256 " 256 colors
-color xoria256
+set background=dark
+colorscheme gruvbox
 
 set gfn=Monospace\ 10
 

@@ -1,18 +1,34 @@
 #!/bin/bash
+
 ###############################################################################
-# Dotfiles Installer
-# This script backups your old dotfiles and creates symlinks using the ones in
-# this repo. Configure the script using the following variables:
-dir=~/dotfiles # dotfiles directory
-olddir=~/dotfiles_old # old dotfiles
-files="bashrc bash_profile zshrc oh-my-zsh aliases vimrc virc vim tmux.conf tmux.conf.local" # dotfiles
-###############################################################################\
+# Dotfiles Setup
+#
+# This script *OVERRIDES* existing dotfiles setup and sets up your terminal
+# environment.
+###############################################################################
 
-# create olddir
-mkdir -p $olddir
+# Setup local configs
+cwd=$(pwd)
+backup="~/dotfiles_backup"
+configs="bashrc bash_profile aliases vimrc virc"
 
-# move old dotfiles to $olddir and replace with symlinks
-for file in $files; do
-	mv ~/.$file $olddir
-	ln -s $dir/$file ~/.$file
+mkdir $backup
+for config in $configs; do
+	if [ -e "~/.$config" ]; then
+		echo "Moving ~/.$config to $backup."
+		mv ~/.$config $backup
+	fi
+
+	ln -s $cwd/$config ~/.$config
 done
+
+# Install vim dependencies
+# https://github.com/junegunn/vim-plug/issues/675
+vim +'PlugInstall --sync' +qa
+
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Add aliases to .zshrc
+echo "# Common Aliases" >> ~/.zshrc
+echo "[ -e ~/.aliases ] && . ~/.aliases" >> ~/.zshrc
