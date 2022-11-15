@@ -3,8 +3,8 @@
 ###############################################################################
 
 # Vim
-alias vinone="vim -u NONE"    # Plain vim
-alias vi="vim -u ~/.virc"     # Vim with lite configuration
+alias vinone="vim -u NONE" # Plain vim
+alias vi="vim -u ~/.virc" # Vim with lite configuration
 
 # ls
 alias ll="ls -alF"
@@ -15,5 +15,17 @@ alias l="ls -CF"
 alias cd..="cd .."
 
 # pbcopy for linux (remove this for Mac OS)
-alias pbcopy='xsel --clipboard --input'
-alias pbpaste='xsel --clipboard --output'
+# alias pbcopy='xsel --clipboard --input'
+# alias pbpaste='xsel --clipboard --output'
+
+# Colored output for commands
+alias ls="ls --color=auto"
+alias grep="grep --color=auto"
+alias fgrep="fgrep --color=auto"
+alias egrep="egrep --color=auto"
+
+# Functions
+function f() { find . -iname "*$1*" ${@:2} } # find
+function r() { grep "$1" ${@:2} -R . } # grep
+function fo() { vim $(find . -iname "*$1*" | head -1) } # find and open
+function jfo() { fo "$1.java" } # find and open java file
