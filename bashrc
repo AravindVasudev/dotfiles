@@ -13,7 +13,7 @@ if [[ $- == *i* ]]; then
 fi
 
 # Load aliases
-[ -f ~/.aliases ] && . ~/.aliases
+[ -e ~/.aliases ] && . ~/.aliases
 
 # Check window size after each command
 shopt -s checkwinsize
